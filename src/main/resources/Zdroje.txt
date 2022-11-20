@@ -1,0 +1,12 @@
+Add buttons to gridpane
+https://stackoverflow.com/questions/24715911/javafx-adding-button-to-grid-pane
+
+Button hover CSS style
+https://stackoverflow.com/questions/30680570/javafx-button-border-and-hover
+
+Button generator
+https://css-tricks.com/examples/ButtonMaker/#
+
+Background image
+https://stackoverflow.com/questions/23515172/set-background-image-the-same-size-as-the-window-screen-in-java-app
+https://stackoverflow.com/questions/33973830/javafx-gridpane-background-image
