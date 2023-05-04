@@ -24,20 +24,56 @@
                     <items>
                         <MenuItem mnemonicParsing="false">
                      <graphic>
-                        <Label prefHeight="500.0" prefWidth="400.0" text="Před začátkem hry se hráči dohodnou na velikosti čtverce, počtu a tvaru lodí, které do plánku budou zakreslovat . Cílem hry je nalézt a potopit všechny lodě soupeře jako první. Hráč zakreslí svoje lodě (nesmí se dotýkat stranou, ale lze je i otočit). Protivník učiní totéž do své mřížky. Začínající hráč ohlásí zvolený čtverec, kam namířil. Protivník odpoví “voda” (šedý křížek), pokud ve své mřížce na této pozici nemá žádnou loď. V opačném případě hlásí “zásah”  (červený křížek) . Hráč si může tečkou označovat do zmenšené mřížky radaru místa, kam již mířil, aby si udržel přehled. Zásahy lze označovat křížkem. Pokud je zasažen poslední čtvereček lodě, je plavidlo potopeno a hráč musí kromě zásahu ohlásit protivníkovi také název lodi a skutečnost, že se celá potopila  (změna červených křížků na černé). Protivníkovo míření se zakresluje do velké mřížky s vlastními loděmi a jejich zásahy se značí přeškrtnutím políčka. Hráči se střídají, dokud jeden z nich nemá potopené všechny lodě." />
+                        <Label prefHeight="500.0" prefWidth="400.0" style="-fx-text-fill: #000000;" text="Před začátkem hry se hráči dohodnou na velikosti čtverce, počtu a tvaru lodí, které do plánku budou zakreslovat . Cílem hry je nalézt a potopit všechny lodě soupeře jako první. Hráč zakreslí svoje lodě (nesmí se dotýkat stranou, ale lze je i otočit). Protivník učiní totéž do své mřížky. Začínající hráč ohlásí zvolený čtverec, kam namířil. Protivník odpoví “voda” (šedý křížek), pokud ve své mřížce na této pozici nemá žádnou loď. V opačném případě hlásí “zásah”  (červený křížek) . Hráč si může tečkou označovat do zmenšené mřížky radaru místa, kam již mířil, aby si udržel přehled. Zásahy lze označovat křížkem. Pokud je zasažen poslední čtvereček lodě, je plavidlo potopeno a hráč musí kromě zásahu ohlásit protivníkovi také název lodi a skutečnost, že se celá potopila  (změna červených křížků na černé). Protivníkovo míření se zakresluje do velké mřížky s vlastními loděmi a jejich zásahy se značí přeškrtnutím políčka. Hráči se střídají, dokud jeden z nich nemá potopené všechny lodě." />
                      </graphic></MenuItem>
                     </items>
                 </Menu>
                 <Menu mnemonicParsing="false" text="Návod">
+               <items>
+                  <Menu mnemonicParsing="false" text="Návod menu">
                     <items>
-                        <MenuItem mnemonicParsing="false" text="Menu help" />
-                        <MenuItem mnemonicParsing="false" text="Build help" />
-                        <MenuItem mnemonicParsing="false" text="Batlle help" />
+                      <MenuItem mnemonicParsing="false">
+                           <graphic>
+                              <Label prefHeight="500.0" prefWidth="400.0" style="-fx-text-fill: #000000;" text="Tlačítko počítač po kliknutí změní strategii (algoritmus) oponenta. &quot;Mód špiona&quot;, jenž povoluje použití pomůcky užitečné zvláště pro vytváření aplikace a hledání chyb v programu. Herní mód mění počet lodí použité ve hře, mód &quot;vlastní&quot; umožňuje zadat vlastní počet lodí, počet je kontrolován plností desky, která je znázorněna procenty a grafem. Spuštění hry spustí hru se zadaným nastavením. " wrapText="true">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </graphic>
+                        </MenuItem>
                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Návod pro pokládání lodí">
+                     <items>
+                        <MenuItem mnemonicParsing="false">
+                           <graphic>
+                              <Label prefHeight="500.0" prefWidth="400.0" style="-fx-text-fill: #000000;" text="Hráč si v horní části obrazovky vybírá velikosti lodí, pod obrázky daných plavidel je počet zbývajících lodí, které ještě musí položit. Na levou od výběru lodí je tlačítko, které mění orientaci lodí, mezi horizontální a vertikální pozicí. Vybraní lodě a orientace múza hráč položit loď na desku pomocí kliknutí na jedno z políček stojí (modré) desky. Po vybraní pole se loď vždy položí v právo nebo dolů vzhledem k vybranému bodů a otočení. Pokud by se celá loď nevešla do pole nebo by byla moc blízko lodě druhé, loď se nepoloží s v &quot;komunikátoru&quot; se objeví zpráva informující hráče o problému. Tlačítko &quot;náhodné postavení &quot; rozmístí nepoložené lodě náhodné na desku. Tlačítko &quot;vyčistit desku&quot; smaže všechny lodě z desky." wrapText="true">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </graphic>
+                        </MenuItem>
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Návod bitva">
+                     <items>
+                        <MenuItem mnemonicParsing="false">
+                           <graphic>
+                              <Label prefHeight="500.0" prefWidth="400.0" style="-fx-text-fill: #000000;" text="V horní části aplikace se nyní místo nepostavených lodí ukazují lodě, které ještě počítač nepotopil a nad deskou oponenta se ukazují lodě nepotopené hráčem. Deska, na které hráč postavil lodě se zablokuje, takže na ni nelze kliknout a deska oponenta po přesunutí kurzoru nad její políčka ukáže ikonku zaměřovače. Hráč se smaží klikáním na zelenou desku odhalit a potopit nepřátelské lodě. Po kliknutí se políčko změní na buďto šedý kříže – hráč se netrefil, červený křížek – hráč se trefil, anebo na černý kříž, když potopil celou loď, přičemž se přebarví na černou i křížky dané lodě zasažené v minulých tazích. Po každém tahu, který hráč udělá, vystřelí také počítač na desku s loděmi hráče podle zvoleného algoritmu. Pokud se hráč nebo počítač trefí do lodě, mohou vystřelit ještě jednou. Pokud byl aktivován mód špiona, po zmáčknutí příslušného tlačítka se na desce oponenta objeví zelené tečky na každém políčku, kde má položenou loď. V průběhu hry se může hráč kdykoliv podívat na statistiky." wrapText="true">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </graphic>
+                        </MenuItem>
+                     </items>
+                  </Menu>
+               </items>
                 </Menu>
                 <Menu mnemonicParsing="false" onAction="#CloseApp" text="Zavřít program">
                <items>
-                  <MenuItem mnemonicParsing="false" onAction="#CloseApp" text="Unspecified Action" />
+                  <MenuItem mnemonicParsing="false" onAction="#CloseApp" text="Opravdu chcete zavřít program?" />
                </items>
                 </Menu>
             </menus>
@@ -241,7 +277,7 @@
                   </Label>
                </children>
             </Pane>
-            <Button fx:id="initializeBut" alignment="CENTER" layoutX="3.0" layoutY="2.0" mnemonicParsing="false" onKeyPressed="#firstStart" onMouseClicked="#firstStart" onMouseEntered="#firstStart" onMouseExited="#firstStart" onMouseMoved="#firstStart" onMousePressed="#firstStart" onScroll="#firstStart" opacity="0.51" prefHeight="974.0" prefWidth="1394.0" text="Loading . . . " visible="false">
+            <Button fx:id="initializeBut" alignment="CENTER" layoutX="3.0" layoutY="2.0" mnemonicParsing="false" onKeyPressed="#firstStart" onMouseClicked="#firstStart" onMouseEntered="#firstStart" onMouseExited="#firstStart" onMouseMoved="#firstStart" onMousePressed="#firstStart" onScroll="#firstStart" opacity="0.76" prefHeight="1000.0" prefWidth="1600.0" text="Loading . . . ">
                <font>
                   <Font name="Centaur" size="63.0" />
                </font>
